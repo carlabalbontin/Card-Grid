@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Card Example</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<style>
+
+	.col-12 {margin-top: 30px;}
+
+	.stack {
+	    padding-left: 0 !important;
+	    padding-right: 0 !important;
+	}
+
+	.mainContainer {background-color: #F1F1F1;}
+
+	.card {background-color: #FFFFFF;}
+	.card .card-caption {padding: 16px;height:60px;box-sizing: border-box;}
+	.card .card-caption h3 {margin:0px;font-size: 20px;}
+
+	@media (min-width: 768px) and (max-width: 990px) { 
+		.row [class*="col-sm-12"]:nth-child(2) {margin-top: 30px;}
+		.row>.col-sm-12>.card>.card-caption {height: 124px; padding-top: 30px;} /*Agarra las tarjetas que son grandes en tablet*/
+		.row>.col-sm-12>.card>.card-caption h3 {font-size: 30px;}
+	}
+
+	@media (min-width: 768px) {
+		.col-12 {margin-top: 0px;}
+		.row {margin-top: 30px;}
+		.card-caption {padding:16px;padding-bottom: 50px;}
+		/*.stack [class*="col-"] .card .card-caption {background-color:#FFC600 }*/ /*Agarra las tarjetas que son chicas en tablet*/
+	}
+
+	@media (min-width: 992px) {
+		.stack.col-md-4 [class*="col-"]:nth-child(2) {margin-top: 20px;}
+		/*.col-md-4 .card .card-caption {background-color:#FFC600 }*/ /*Agarra las tarjetas que son chicas en desktop pero no en tablet*/
+		.row>.col-md-8>.card>.card-caption {height: 124px; padding-top: 30px;} /*Agarra las tarjetas que son grandes en tablet*/
+		.row>.col-md-8>.card>.card-caption h3 {font-size: 30px;}
+	}
+
+	/*Cards grandes*/
+	.row .col-12 .card .card-caption {}
+
+	/*Cards chicas*/
+	.row .stack .col-12 .card .card-caption {}
+
+	/* La otra opcion es que agarre todas las cajas cuando col-sm-4 o col-md-4 */
+	/*.col-sm-4 .card-caption {background-color: #FFC600;} -- No funciona */
+
+	</style>
+</head>
+
+<body>
+	<div class="mainContainer">
+		<div class="container">
+			<!-- First row -->
+			<div class="row">
+
+				<div class="col-12 col-sm-12 col-md-8">
+					<div class="card">
+						<img src="imagen-prueba.jpg" class="img-responsive">
+						<div class="card-caption">
+							<h3>Super mega amazing title</h3>
+						</div>
+					</div>
+				</div>
+
+				<div class="stack col-12 col-sm-12 col-md-4">
+					<div class="col-12 col-sm-6 col-md-12">
+						<div class="card">
+							<img src="imagen-prueba.jpg" class="img-responsive">
+							<div class="card-caption">
+								<h3>Super mega amazing title</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-12">
+						<div class="card">
+							<img src="imagen-prueba.jpg" class="img-responsive">
+							<div class="card-caption">
+								<h3>Super mega amazing title</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+			<!-- Second row -->
+			<div class="row">
+
+				<div class="col-12 col-sm-12 col-md-4">
+					<div class="card">
+						<img src="imagen-prueba.jpg" class="img-responsive">
+						<div class="card-caption">
+							<h3>Super mega amazing title</h3>
+						</div>
+					</div>
+				</div>
+
+				<div class="stack col-12 col-sm-12 col-md-8">
+
+					<div class="col-12 col-sm-6 col-md-6">
+						<div class="card">
+							<img src="imagen-prueba.jpg" class="img-responsive">
+							<div class="card-caption">
+								<h3>Super mega amazing title</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-6">
+						<div class="card">
+							<img src="imagen-prueba.jpg" class="img-responsive">
+							<div class="card-caption">
+								<h3>Super mega amazing title</h3>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<!-- Third row -->
+			<div class="row">
+
+				<div class="stack col-12 col-sm-12 col-md-4">
+					<div class="col-12 col-sm-6 col-md-12">
+						<div class="card">
+							<img src="https://okl.scene7.com/is/image/OKL/041816_caughy_36?wid=740&op_sharpen=1" class="img-responsive">
+							<div class="card-caption">
+								<h3>Super mega amazing title</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-12">
+						<div class="card">
+							<img src="https://okl.scene7.com/is/image/OKL/041816_caughy_36?wid=740&op_sharpen=1" class="img-responsive">
+							<div class="card-caption">
+								<h3>Super mega amazing title</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-8">
+					<div class="card">
+						<img src="https://okl.scene7.com/is/image/OKL/041816_caughy_36?wid=740&op_sharpen=1" class="img-responsive">
+						<div class="card-caption">
+							<h3>Super mega amazing title</h3>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+			<!-- Fourth row -->
+			<div class="row">
+
+				<div class="col-12 col-sm-12 col-md-4">
+					<div class="card">
+						<img src="imagen-prueba.jpg" class="img-responsive">
+						<div class="card-caption">
+							<h3>Super mega amazing title</h3>
+						</div>
+					</div>
+				</div>
+
+				<div class="stack col-12 col-sm-12 col-md-8">
+
+					<div class="col-12 col-sm-6 col-md-6">
+						<div class="card">
+							<img src="imagen-prueba.jpg" class="img-responsive">
+							<div class="card-caption">
+								<h3>Super mega amazing title</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-6">
+						<div class="card">
+							<img src="imagen-prueba.jpg" class="img-responsive">
+							<div class="card-caption">
+								<h3>Super mega amazing title</h3>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>
